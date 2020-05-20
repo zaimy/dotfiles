@@ -18,7 +18,6 @@ exec $SHELL -l
 
 echo "====> Install Poetry..."
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
-poetry config virtualenvs.in-project true
 
 echo "====> Install Logitech Options..."  # TODO: Use Homebrew after cask updating. https://github.com/Homebrew/homebrew-cask-drivers/pull/1581
 open https://www.logitech.com/en-us/product/options
@@ -37,7 +36,11 @@ sudo tlmgr paper a4
 echo "====> Setup dotfiles..."
 RCRC=$HOME/src/github.com/zaimy/dotfiles/rcm/rcrc rcup
 
-echo "====> Install Fisher & Fish packages..."
+echo "====> Install Fisher..."
 curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
-echo "Exec fisher in fish shell."
+
+echo "====> Finishing..."
+echo "Exec below commands in fish shell."
+echo "- fisher"
+echo "- poetry config virtualenvs.in-project true"
 fish
