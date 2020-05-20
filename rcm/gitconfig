@@ -1,5 +1,4 @@
 [core]
-	pager = lv -c
 	quotepath = false
 	excludesfile = ~/.gitignore_global
 [user]
