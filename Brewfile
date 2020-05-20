@@ -40,6 +40,7 @@ cask "slack"
 cask "spotify"
 cask "sublime-text"
 cask "tunnelblick"
+cask "visual-studio-code"
 cask "vivaldi"
 cask "zoomus"
 mas "Skitch", id: 425955336
