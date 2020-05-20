@@ -34,7 +34,7 @@ sudo tlmgr update --self --all
 sudo tlmgr paper a4
 
 echo "====> Setup dotfiles..."
-RCRC=$HOME/src/github.com/kenchan/dotfiles/rcrc rcup
+RCRC=$HOME/src/github.com/zaimy/dotfiles/rcm/rcrc rcup
 
 echo "====> Install Fisher & Fish packages..."
 curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
