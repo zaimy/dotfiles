@@ -1,0 +1,52 @@
+[core]
+	pager = lv -c
+	quotepath = false
+	excludesfile = ~/.gitignore_global
+[user]
+	email = zaitsu@pepabo.com
+	name = zaimy
+[github]
+	user = zaimy
+[color]
+	ui = auto
+[alias]
+	st   = status
+	df   = diff
+	dfc  = diff --cached
+	aa   = add --all
+	ap   = add -p
+	ci   = commit
+	co   = checkout
+	b    = branch
+	g    = grep -n
+	pl   = pull
+	pr   = pull --rebase
+	cp   = cherry-pick
+	fp   = fetch --prune
+	nb   = checkout -b
+	amend      = commit --amend
+	branches   = branch -a
+	discard    = checkout --
+	graph      = log --graph -10 --branches --remotes --tags  --format=format:'%Cgreen%h %Creset• %<(75,trunc)%s (%cN, %ar) %Cred%d' --date-order
+	history    = log -10 --format=format:'%Cgreen%h %Creset• %s (%cN, %ar)'
+	new-branch = checkout -b
+	precommit  = diff --cached -w --word-diff=color --word-diff-regex='[^[:space:]<>]+'
+	remotes    = remote -v
+	stashes    = stash list
+	summary    = status -u -s
+	uncommit   = reset --mixed HEAD~
+	unstage    = reset -q HEAD --
+	see = browse
+	plr = pull-request
+[filter "lfs"]
+	clean = git-lfs clean %f
+	smudge = git-lfs smudge %f
+	required = true
+[diff]
+  compactionHeuristic = true
+[push]
+  default = simple
+[fetch]
+  prune = true
+[ghq]
+  root = ~/src

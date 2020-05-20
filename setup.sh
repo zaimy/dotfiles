@@ -14,6 +14,7 @@ read
 
 echo "====> Install applications with Homebrew..."
 brew bundle
+exec $SHELL -l
 
 echo "====> Install Poetry..."
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
@@ -29,6 +30,13 @@ echo "Press any keys when the installation is complete."
 read
 
 echo "====> Setup MacTex..."
-exec $SHELL -l
-sudo tlmgr update --self --all # Update all packages
+sudo tlmgr update --self --all
 sudo tlmgr paper a4
+
+echo "====> Setup dotfiles..."
+RCRC=$HOME/src/github.com/kenchan/dotfiles/rcrc rcup
+
+echo "====> Install Fisher & Fish packages..."
+curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
+echo "Exec fisher in fish shell."
+fish
