@@ -18,6 +18,7 @@ exec $SHELL -l
 
 echo "====> Install Poetry..."
 curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python
+poetry config virtualenvs.in-project true
 
 echo "====> Install Logitech Options..."  # TODO: Use Homebrew after cask updating. https://github.com/Homebrew/homebrew-cask-drivers/pull/1581
 open https://www.logitech.com/en-us/product/options
