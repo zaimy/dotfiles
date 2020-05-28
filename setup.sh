@@ -35,6 +35,7 @@ sudo tlmgr paper a4
 
 echo "====> Setup dotfiles..."
 RCRC=$HOME/src/github.com/zaimy/dotfiles/rcm/rcrc rcup
+ln -s "$HOME/src/github.com/zaimy/dotfiles/vscode/settings.json" "~/Library/Application\ Support/Code/User/settings.json"
 
 echo "====> Install Fisher..."
 curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
