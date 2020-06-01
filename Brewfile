@@ -14,6 +14,7 @@ brew "go"
 brew "hub"
 brew "hugo"
 brew "jq"
+brew "kubectl"
 brew "pt"
 brew "pyenv"
 brew "rbenv"
@@ -46,7 +47,8 @@ cask "spotify"
 cask "sublime-text"
 cask "tunnelblick"
 cask "visual-studio-code"
-cask "vivaldi"
 cask "zoomus"
 mas "Magnet", id: 441258766
 mas "Skitch", id: 425955336
+mas "Spark", id: 1176895641
+mas "Webcam Settings", id: 533696630

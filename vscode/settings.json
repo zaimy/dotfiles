@@ -1,5 +1,6 @@
 {
     "editor.fontFamily": "HackGen",
     "terminal.integrated.shell.osx": "/usr/local/bin/fish",
-    "editor.fontSize": 13
+    "editor.fontSize": 13,
+    "files.insertFinalNewline": true
 }
