@@ -43,7 +43,6 @@ cask "julia"
 cask "karabiner-elements"
 cask "krisp"
 cask "mactex"
-cask "mendeley"
 cask "r"
 cask "rstudio"
 cask "slack"
@@ -52,6 +51,7 @@ cask "sublime-text"
 cask "tunnelblick"
 cask "visual-studio-code"
 cask "zoomus"
+cask "zotero"
 mas "Magnet", id: 441258766
 mas "Skitch", id: 425955336
 mas "Spark", id: 1176895641
